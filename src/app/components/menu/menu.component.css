@@ -1,0 +1,25 @@
+.iniciar {
+    position: absolute;
+    display: inline-block;
+    margin: auto;
+    top: 45%;
+    left: 0;
+    right: 0;
+    border-style: solid;
+    border-radius: 25px;
+    background: rgba(200, 200, 200, 0.2);
+    color: white;
+    padding: 16px 32px;
+    padding-top: 32px;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    text-decoration: none;
+    font-family: marvel;
+    font-size: 50px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.iniciar:hover {
+    background-color: red;
+}

@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("./assets/img/wallpaper.jpg");
+    overflow: hidden;
+    user-select: none;
+}
+
+.fade-out {
+    animation: fadeOut 3s forwards;
+}
+
+@font-face {
+    font-family: marvel;
+    src: url("src/assets/fonts/marvel.ttf");
+}
+
+@keyframes fadeOut {
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
