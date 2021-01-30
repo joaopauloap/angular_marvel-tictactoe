@@ -1,3 +1,46 @@
-h1 {
+.playerName {
     color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    margin-top: 40px;
+    column-gap: 150px;
+}
+
+.player {
+    margin-top: 70px;
+    width: 200px;
+    height: 200px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.tabuleiro {
+    max-height: 490px;
+    max-width: 490px;
+    background-color: black;
+}
+
+.campo {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    background-color: darkblue;
+    width: 160px;
+    height: 160px;
+    margin: 1.5px;
+    font-family: arial;
+    font-size: 200px;
+    text-align: center;
 }

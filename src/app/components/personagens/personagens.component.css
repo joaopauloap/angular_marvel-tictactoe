@@ -12,7 +12,7 @@ h1 {
     visibility: hidden;
     width: 100%;
     height: 100%;
-    font-size: 100px;
+    font-size: min(20vw, 90px);
     text-align: center;
     background-color: rgba(0, 0, 0, 0.6);
     font-family: sans-serif;
@@ -22,8 +22,8 @@ h1 {
     border-color: red;
     border-style: solid;
     position: relative;
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 90px;
+    max-height: 90px;
     border-style: solid;
 }
 
@@ -36,9 +36,16 @@ h1 {
 
 table {
     display: inline-grid;
-    grid-template-columns: auto auto auto auto auto;
-    border-style: inset;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+    border-style: solid;
     color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
 }
 
 .character {
@@ -47,12 +54,6 @@ table {
     max-height: 90px;
     border-style: solid;
     cursor: pointer;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
 }
 
 .character:after,
@@ -74,11 +75,11 @@ img {
 
 .character:before {
     content: attr(data-content);
+    font-size: min(3vw, 15px);
     width: 100%;
     color: #fff;
     z-index: 1;
     bottom: 0;
-    padding: 4px 10px;
     text-align: center;
     background: red;
     box-sizing: border-box;

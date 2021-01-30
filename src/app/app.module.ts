@@ -9,6 +9,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { PersonagensComponent } from './components/personagens/personagens.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { GameComponent } from './components/game/game.component';
+import { AuthGuard } from './components/game/game.authguard.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { GameComponent } from './components/game/game.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

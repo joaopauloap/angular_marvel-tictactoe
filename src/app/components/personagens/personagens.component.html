@@ -1,8 +1,8 @@
-<div class="fade-in">
+<div [ngClass]="personagensComponentFade">
     <h1>ESCOLHA SEU PERSONAGEM</h1>
     <div class="board-container">
         <table>
-            <td *ngFor="let personagem of personagens" class="character" attr.data-content="{{personagem.name}}" (click)="functeste($event)" attr.id="{{personagem.name}}">
+            <td *ngFor="let personagem of personagens" class="character" attr.data-content="{{personagem.name}}" (click)="personagemClick($event)" attr.id="{{personagem.name}}">
                 <div id="overlay-{{personagem.name}}" class="overlay">X</div>
                 <!-- <img attr.src="{{personagem.thumbnail}}"> -->
                 <img attr.src="{{personagem.thumbnail.path + '.jpg'}}">

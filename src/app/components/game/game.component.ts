@@ -7,13 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameComponent implements OnInit {
 
-  constructor() {}
+  constructor() { }
 
-  player1:string = history.state.player1
-  player2:string  = history.state.player2
+  p1 = history.state.player1
+  p2 = history.state.player2
 
-  ngOnInit(): void { 
-    
+  campos: Array<number> = [1,2,3,4,5,6,7,8,9]
+
+  ngOnInit(): void {
 
   }
 

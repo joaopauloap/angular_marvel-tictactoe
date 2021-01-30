@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MenuComponent } from './components/menu/menu.component';
 import { PersonagensComponent } from './components/personagens/personagens.component';
 import { GameComponent } from './components/game/game.component'
+import { AuthGuard } from './components/game/game.authguard.service';
 
 const routes: Routes = [
   {
@@ -16,6 +17,7 @@ const routes: Routes = [
   },
   {
     path: 'game',
+    canActivate: [AuthGuard],
     component: GameComponent
   }
 ];

@@ -1,1 +1,17 @@
-<h1>Welcome {{player1}} and {{player2}}</h1>
+<div class="container">
+
+    <div #player1 class="player">
+        <img src={{p1.thumbnail}}>
+        <p class="playerName">{{p1.name}}</p>
+    </div>
+
+    <div class="tabuleiro">
+        <div *ngFor="let campo of campos" class="campo"></div>
+    </div>
+
+    <div #player2 class="player">
+        <img src={{p2.thumbnail}}>
+        <p class="playerName">{{p2.name}}</p>
+    </div>
+
+</div>
