@@ -1,27 +1,22 @@
 # MarvelTicTacToe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
+Projeto em desenvolvimento de um jogo da velha com tema da Marvel feito com [Angular CLI](https://github.com/angular/angular-cli) versão 11.1.1.
 
-## Development server
+## Sobre o projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+O projeto realiza um fetch na [Marvel Comics API](https://developer.marvel.com/), retornando uma lista de personagens e disponibilizando-os para escolha dos dois jogadores locais. Após a seleção, o jogo da velha é iniciado e vence a rodada aquele que realizar a sequência correta de seu símbolo no tabuleiro.
 
-## Code scaffolding
+A interface é amigavel, intuitiva e responsiva, ou seja, se adapta ao dispositivo utilizado, podendo ser caregada em dispositivos mobile.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Executando o projeto
 
-## Build
+1- Baixe o arquivo .zip do projeto, extraia-o em um diretório de sua escolha e inicie um terminal na pasta extraida;
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+2- Assumindo que você possui o Node e um gerenciador de pacotes instalados, execute o comando para instalar as dependências necessárias (como por exemplo `npm install` ou simplesmente `npm i`);
 
-## Running unit tests
+3- Com todas as dependências do Node e Angular CLI devidamente instaladas, a partir do terminal execute o comando `ng serve` e aguarde o fim do build com a mensagem de sucesso. 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4- Abra seu navegador e digite na barra de endereços `http://localhost:4200/` e o jogo será carregado.
 
-## Running end-to-end tests
+5- Divirta-se :) 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
