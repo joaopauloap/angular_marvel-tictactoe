@@ -1,15 +1,19 @@
-<div class="container">
+<div class="container fade-in">
 
     <div #player1 class="player">
+        <p class="score">Score: {{p1.score}}</p>
         <img src={{p1.thumbnail}}>
         <p class="playerName">{{p1.name}}</p>
     </div>
 
-    <div class="tabuleiro">
-        <div *ngFor="let campo of campos" class="campo"></div>
-    </div>
+    <table class="tabuleiro">
+        <td *ngFor="let cmp of [].constructor(campos.length); index as i" attr.id="{{i}}" class="campo" (click)="campoClick($event)">
+
+        </td>
+    </table>
 
     <div #player2 class="player">
+        <p class="score">Score: {{p2.score}}</p>
         <img src={{p2.thumbnail}}>
         <p class="playerName">{{p2.name}}</p>
     </div>

@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { Personagem } from './personagens.model';
 import { Router } from '@angular/router';
 import { AuthGuard } from '../game/game.authguard.service';
-import { stringify } from '@angular/compiler/src/util';
 
 @Component({
   selector: 'app-personagens',

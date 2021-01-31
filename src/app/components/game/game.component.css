@@ -1,3 +1,11 @@
+.score {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+}
+
 .playerName {
     color: white;
     text-align: center;
@@ -8,39 +16,51 @@
 
 .container {
     display: flex;
-    width: 100%;
     justify-content: center;
+    width: 100%;
     grid-template-columns: auto auto auto;
-    margin-top: 40px;
-    column-gap: 150px;
+    margin-top: 5vh;
+    grid-gap: 5vw;
 }
 
 .player {
-    margin-top: 70px;
-    width: 200px;
-    height: 200px;
+    margin-top: 50px;
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 15vw;
+    height: 15vw;
 }
 
 .tabuleiro {
-    max-height: 490px;
-    max-width: 490px;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 25vmin);
+    grid-template-rows: repeat(3, 25vmin);
     background-color: black;
+    color: white;
 }
 
 .campo {
     position: relative;
-    display: inline-block;
-    vertical-align: top;
     background-color: darkblue;
-    width: 160px;
-    height: 160px;
     margin: 1.5px;
-    font-family: arial;
-    font-size: 200px;
+    font-family: 'Lucida Console';
     text-align: center;
+    font-size: 25vmin;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        justify-content: center;
+        width: 100%;
+    }
+    .player {
+        display: none;
+    }
+    .tabuleiro {
+        display: inline-grid;
+        grid-template-columns: repeat(3, 30vmin);
+        grid-template-rows: repeat(3, 30vmin);
+        background-color: black;
+    }
 }

@@ -83,6 +83,7 @@ img {
     text-align: center;
     background: red;
     box-sizing: border-box;
+    font-family: 'Lucida Console';
 }
 
 .character:hover:after,
