@@ -15,11 +15,13 @@ export class PersonagensComponent implements OnInit {
   players = {
     player1: {
       name: '',
-      thumbnail: ''
+      thumbnail: '',
+      score:0
     },
     player2: {
       name: '',
-      thumbnail: ''
+      thumbnail: '',
+      score:0
     },
   }
 
@@ -35,24 +37,6 @@ export class PersonagensComponent implements OnInit {
     this.personagensService.read().subscribe(res => {
       this.personagens = res.data.results
     })
-
-    // this.personagens = [
-    //   { name: 'joao', thumbnail: 'https://www.w3schools.com/w3images/avatar1.png' },
-    //   { name: 'luiz', thumbnail: 'https://www.w3schools.com/w3images/avatar4.png' },
-    //   { name: 'pedro', thumbnail: 'https://www.w3schools.com/w3images/avatar5.png' },
-    //   { name: 'paulo', thumbnail: 'https://www.w3schools.com/w3images/avatar2.png' },
-    //   { name: 'jose', thumbnail: 'https://www.w3schools.com/w3images/avatar3.png' },
-    //   { name: 'celso', thumbnail: 'https://www.w3schools.com/w3images/avatar2.png' },
-    //   { name: 'henrique', thumbnail: 'https://www.w3schools.com/w3images/avatar6.png' },
-    //   { name: 'rodrigo', thumbnail: 'https://www.w3schools.com/w3images/avatar3.png' },
-    //   { name: 'mateus', thumbnail: 'https://www.w3schools.com/w3images/avatar5.png' },
-    //   { name: 'nicolas', thumbnail: 'https://www.w3schools.com/w3images/avatar3.png' },
-    //   { name: 'italo', thumbnail: 'https://www.w3schools.com/w3images/avatar1.png' },
-    //   { name: 'rodrigo', thumbnail: 'https://www.w3schools.com/w3images/avatar6.png' },
-    //   { name: 'mateus', thumbnail: 'https://www.w3schools.com/w3images/avatar2.png' },
-    //   { name: 'icaro', thumbnail: 'https://www.w3schools.com/w3images/avatar1.png' },
-    //   { name: 'italo', thumbnail: 'https://www.w3schools.com/w3images/avatar4.png' },
-    // ]
 
   }
 

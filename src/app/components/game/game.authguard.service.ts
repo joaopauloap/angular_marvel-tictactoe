@@ -5,7 +5,7 @@ import { Router, CanActivate } from '@angular/router';
 export class AuthGuard implements CanActivate {
 
     base_url: string;
-    flag:boolean = true     //MUDAR ISSO PARA FALSE APOS FASE DE TESTES
+    flag:boolean = false     //MUDAR ISSO PARA FALSE APOS FASE DE TESTES
 
     constructor(private router: Router) { }
 

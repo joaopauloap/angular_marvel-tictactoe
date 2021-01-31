@@ -1,9 +1,24 @@
+<div class="playerMobile">
+    <span>
+        <p>{{p1.name}}</p>
+        <img src={{p1.thumbnail}} attr.class="{{classP1}}">
+        <p>Score: {{p1.score}}</p>
+    </span>
+
+    <span>
+        <p>{{p2.name}}</p>
+        <img src={{p2.thumbnail}} attr.class="{{classP2}}">
+        <p>Score: {{p2.score}}</p>
+    </span>
+</div>
+
 <div class="container fade-in">
 
+
     <div #player1 class="player">
-        <p class="score">Score: {{p1.score}}</p>
-        <img src={{p1.thumbnail}}>
         <p class="playerName">{{p1.name}}</p>
+        <img src={{p1.thumbnail}} attr.class="{{classP1}}">
+        <p class="score">Score: {{p1.score}}</p>
     </div>
 
     <table class="tabuleiro">
@@ -13,9 +28,9 @@
     </table>
 
     <div #player2 class="player">
-        <p class="score">Score: {{p2.score}}</p>
-        <img src={{p2.thumbnail}}>
         <p class="playerName">{{p2.name}}</p>
+        <img src={{p2.thumbnail}} attr.class="{{classP2}}">
+        <p class="score">Score: {{p2.score}}</p>
     </div>
 
 </div>

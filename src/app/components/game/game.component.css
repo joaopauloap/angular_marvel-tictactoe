@@ -27,9 +27,18 @@
     margin-top: 50px;
 }
 
+.active {
+    border-style: solid;
+    border-color: red;
+    border-width: 1vw;
+}
+
 img {
     width: 15vw;
     height: 15vw;
+    border-style: solid;
+    border-color: black;
+    border-width: 1vw;
 }
 
 .tabuleiro {
@@ -49,7 +58,29 @@ img {
     font-size: 25vmin;
 }
 
+.playerMobile {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
+    p {
+        color: white;
+        font-family: Arial;
+        margin: 0px;
+        padding: 0px;
+    }
+    span {
+        display: inline-block;
+        text-align: center;
+    }
+    .playerMobile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        grid-template-columns: auto auto;
+        grid-gap: 40vw;
+        margin-top: 5vh;
+    }
     .container {
         justify-content: center;
         width: 100%;
