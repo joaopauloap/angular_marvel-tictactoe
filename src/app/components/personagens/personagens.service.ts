@@ -15,7 +15,7 @@ export class PersonagensService {
   }
 
   read():any {
-    return this.http.get<any>("http://gateway.marvel.com/v1/public/characters?ts=1&apikey=7d667955e9a3836990a5a529ac097762&hash=9b564cbeccdf68457cbb46b70684614e")
+    return this.http.get<any>("https://gateway.marvel.com/v1/public/characters?ts=1&apikey=7d667955e9a3836990a5a529ac097762&hash=9b564cbeccdf68457cbb46b70684614e")
   }
 
 }

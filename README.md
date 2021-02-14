@@ -6,9 +6,13 @@ Projeto em desenvolvimento de um jogo da velha com tema da Marvel feito com [Ang
 
 O projeto realiza um fetch na [Marvel Comics API](https://developer.marvel.com/), retornando uma lista de personagens e disponibilizando-os para escolha dos dois jogadores locais. Após a seleção, o jogo da velha é iniciado e vence a rodada aquele que realizar a sequência correta de seu símbolo no tabuleiro.
 
-A interface é amigavel, intuitiva e responsiva, ou seja, se adapta ao dispositivo utilizado, podendo ser caregada em dispositivos mobile.
+A interface é amigavel, intuitiva e responsiva, ou seja, se adapta ao dispositivo utilizado, podendo ser caregada em dispositivos móveis.
 
-## Executando o projeto
+## O Jogo
+
+Para jogar [Clique Aqui](https://joaopauloap.github.io/marveltictactoe/)
+
+## Executando o projeto através do angular-cli
 
 1- Baixe o arquivo .zip do projeto, extraia-o em um diretório de sua escolha e inicie um terminal na pasta extraida;
 
