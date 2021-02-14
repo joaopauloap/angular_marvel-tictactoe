@@ -8,7 +8,7 @@ import { AuthGuard } from './components/game/game.authguard.service';
 
 const routes: Routes = [
   {
-    path: '',
+    path: '/',
     component: MenuComponent
   },
   {
