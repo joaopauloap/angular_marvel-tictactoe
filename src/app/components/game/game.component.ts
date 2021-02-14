@@ -12,7 +12,7 @@ export class GameComponent implements OnInit {
   p1 = history.state.player1
   p2 = history.state.player2
 
-  // p1 = { name: 'joao', thumbnail: 'https://www.w3schools.com/w3images/avatar1.png', score: 0 }
+  // p1 = { name: 'joao paulo de araujo porto', thumbnail: 'https://www.w3schools.com/w3images/avatar1.png', score: 0 }
   // p2 = { name: 'paulo', thumbnail: 'https://www.w3schools.com/w3images/avatar2.png', score: 0 }
 
   campos: Array<any> = [1, 2, 3, 4, 5, 6, 7, 8, 9]

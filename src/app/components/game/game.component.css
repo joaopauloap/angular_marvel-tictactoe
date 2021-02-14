@@ -64,16 +64,15 @@ img {
 
 @media only screen and (max-width: 600px) {
     p {
+        margin: 0px;
         color: white;
         font-family: Arial;
-        margin: 0px;
-        padding: 0px;
     }
-    span {
+    .playerMobile {
         display: inline-block;
         text-align: center;
     }
-    .playerMobile {
+    .containerMobile {
         display: flex;
         justify-content: center;
         width: 100%;
