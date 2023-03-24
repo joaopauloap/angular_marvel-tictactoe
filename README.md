@@ -10,7 +10,7 @@ A interface é amigavel, intuitiva e responsiva, ou seja, se adapta ao dispositi
 
 ## O Jogo
 
-Para jogar [Clique Aqui](https://joaopauloap.github.io/marveltictactoe/)
+Para jogar [Clique Aqui](https://joaopauloap.github.io/angular_marvel-tictactoe/)
 
 ## Executando o projeto através do angular-cli
 
